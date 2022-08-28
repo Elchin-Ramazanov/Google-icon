@@ -1,0 +1,179 @@
+:root {
+    --google-btn-reng: #f8f9fa;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+}
+
+a {
+    color: #000;
+}
+
+a:hover {
+    text-decoration: underline;
+}
+
+nav button {
+    margin-right: 8px;
+
+}
+
+img {
+    width: 24px;
+    height: 24px;
+}
+
+.logo-section img {
+    width: 272px;
+    height: 92px;
+}
+
+.container {
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.menu-icon:hover {
+    color: #5f6368;
+    opacity: 1;
+}
+
+nav {
+    flex-basis: 10%;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    gap: 10px;
+}
+
+nav button {
+    background-color: #1a73e8;
+    border: transparent;
+    padding: 9 23px;
+    color: white;
+    border-radius: 4px;
+    box-sizing: border-box;
+    width: 90px;
+    height: 40px;
+}
+
+section {
+    flex: basis 1;
+}
+
+.buttons-groups {
+    display: flex;
+    gap: 10px;
+}
+
+section button {
+    background-color: var(--google-btn-reng);
+    border: 1px solid transparent;
+    width: 144px;
+    height: 36px;
+}
+
+section a {
+    color: #1a0dab;
+}
+
+footer {
+
+    flex-basis: 10%;
+}
+
+section {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+}
+
+.search-section {
+    min-width: 582px;
+    height: 44px;
+    position: relative;
+}
+
+.search-section input {
+    width: 100%;
+    height: 100%;
+    border-radius: 25px;
+    border: 1px solid #dedede;
+    outline: none;
+    padding: 0 45px;
+}
+
+.search-section input:hover {
+    box-shadow: 2px 2px 2px 1px rgba(0, 0, 0, 0.2);
+
+}
+
+.s-icon {
+    position: absolute;
+    top: 22%;
+    left: 3%;
+    opacity: .4;
+}
+
+.vs-icon {
+    position: absolute;
+    top: 23%;
+    right: 3%;
+}
+
+footer {
+    flex-basis: 14%;
+    color: #70757a;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+}
+
+h4 {
+    color: #000;
+    padding: 10px;
+    border-bottom: 1px solid #70757a;
+    ;
+}
+
+.links {
+    display: flex;
+    justify-content: space-between;
+}
+
+.left-side a {
+    padding: 5px;
+}
+
+
+.right-side {
+    display: flex;
+    justify-content: flex-end;
+    gap: 20px;
+    padding: 0 20px;
+    margin-right: 12px;
+}
+
+link a {
+    color: #000;
+    padding: 20px;
+    text-decoration: none;
+}
+
+@media(max-width:600px) {
+    .search-section {
+        min-width: 480px;
+    }
+
+    .search-section input {
+        width: 100%;
+    }
+}
